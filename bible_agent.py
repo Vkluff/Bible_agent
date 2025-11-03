@@ -8,7 +8,7 @@ from pydantic import BaseModel
 
 #Configuration
 PROCESSED_DATA_FILE = "processed_bible_data.json"
-AGENT_BASE_URL = "YOUR_PUBLIC_URL_HERE"
+AGENT_BASE_URL = "https://ibleagent-vkluff4263-1irqezi9.leapcell.dev"
 
 # Initialize the OpenAI client (it will automatically use the OPENAI_API_KEY environment variable)
 CLIENT = OpenAI() 

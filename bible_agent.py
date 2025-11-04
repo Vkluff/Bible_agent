@@ -132,8 +132,8 @@ async def get_agent_card():
         "url": f"{AGENT_BASE_URL}/",
         "version": "1.0.0",
         "provider": {
-            "organization": "Your Name/Org",
-            "url": "YOUR_ORG_URL"
+            "organization": "Vkluff's Agents",
+            "url": "https://github.com/Vkluff/Bible_agent.git"
         },
         "capabilities": {
             "streaming": False,

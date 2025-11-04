@@ -128,7 +128,7 @@ async def get_agent_card():
     return {
         "name": "Daily Bible Verse Agent",
         "description": "Provides a personalized Bible verse based on your mood. Just tell me how you feel!",
-        "shortDescription": "A mood-based AI agent that provides personalized Bible verses.",
+        "short_description": "A mood-based AI agent that provides personalized Bible verses.",
         "url": f"{AGENT_BASE_URL}/",
         "version": "1.0.0",
         "provider": {

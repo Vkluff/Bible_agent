@@ -135,6 +135,7 @@ async def get_agent_card():
             "organization": "Vkluff's Agents",
             "url": "https://github.com/Vkluff/Bible_agent.git"
         },
+        "documentationUrl": "https://github.com/Vkluff/Bible_agent/blob/main/README.md",
         "capabilities": {
             "streaming": False,
             "pushNotifications": False,

@@ -1,7 +1,8 @@
 import json
 import random
 import os
-import typing import List, dict, Any, Optional
+from dotenv import load_dotenv
+from typing import List, Dict, Any, Optional
 from openai import OpenAI
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -30,7 +31,7 @@ def load_bible_data() -> List[BibleVerse]:
         print(f"Error: Processed data file not found at {PROCESSED_DATA_FILE}")
         return []
 
-Bible_Verses = load_bible_data()
+BIBLE_VERSES = load_bible_data()
 
 #---Core Agent Logic ---
 def get_verse_by_mood(mood_description: str) -> Optional[BibleVerse]:

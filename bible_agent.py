@@ -14,6 +14,8 @@ AGENT_BASE_URL = "https://ibleagent-vkluff4263-1irqezi9.leapcell.dev"
 # Initialize the OpenAI client (it will automatically use the OPENAI_API_KEY environment variable)
 CLIENT = OpenAI() 
 MODEL = "gpt-4.1-mini"
+load_dotenv()
+CLIENT = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # --- Data Loading and Preprocessing ---
 class BibleVerse:
@@ -126,6 +128,7 @@ async def get_agent_card():
     return {
         "name": "Daily Bible Verse Agent",
         "description": "Provides a personalized Bible verse based on your mood. Just tell me how you feel!",
+        "shortDescription": "A mood-based AI agent that provides personalized Bible verses.",
         "url": f"{AGENT_BASE_URL}/",
         "version": "1.0.0",
         "provider": {

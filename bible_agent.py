@@ -148,6 +148,7 @@ async def get_agent_card():
                 "id": "mood_verse_recommendation",
                 "name": "Mood-Based Verse",
                 "description": "Generates a relevant Bible verse after analyzing the user's mood description.",
+                "short_description": "Generates a personalized Bible verse based on the user's mood.",
                 "inputModes": ["text/plain"],
                 "outputModes": ["text/plain"],
                 "examples": [
